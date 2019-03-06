@@ -1,15 +1,11 @@
 plugins {
     id 'groovy'
     id 'java'
-    id 'application'
 }
-
-mainClassName = ''
 
 allprojects {
     repositories {
         mavenCentral()
-        jcenter()
     }
 }
 

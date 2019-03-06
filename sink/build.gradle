@@ -10,6 +10,12 @@ buildscript {
     }
 }
 
+plugins {
+    id 'groovy'
+    id 'java'
+    id 'application'
+}
+
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
@@ -19,6 +25,9 @@ apply plugin: 'io.spring.dependency-management'
 bootJar {
     baseName = 'spring-cloud-data-flow-sink'
 }
+
+mainClassName = 'org.baeldung.spring.cloud.LogSinkApplication'
+
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
