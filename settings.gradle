@@ -1,2 +1,8 @@
 rootProject.name = 'spring-cloud-data-flow'
+include 'processor'
+findProject(':processor')?.name = 'spring-cloud-data-flow-processor'
+include 'sink'
+findProject(':sink')?.name = 'spring-cloud-data-flow-sink'
+include 'source'
+findProject(':source')?.name = 'spring-cloud-data-flow-source'
 
